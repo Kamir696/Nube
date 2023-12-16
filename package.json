@@ -1,0 +1,12 @@
+{
+  "name": "mi-app-hola-mundo",
+  "version": "1.0.0",
+  "description": "Una aplicación simple de Hola Mundo con Node.js y Express",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
