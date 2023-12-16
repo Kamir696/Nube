@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: ReplicaSet   
+metadata:
+  name: mi-app-replicaset
+  labels:
+    app: mi-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: mi-app
+  template:
+    metadata:
+      labels:
+        app: mi-app
+    spec:
+      containers:
+      - name: mi-app
+        image: sneyder696/mi-app-hola-mundo:1.0.0
+        ports:
+        - containerPort: 8080
